@@ -585,41 +585,6 @@ footer {
 }
 
 /* responsive */
-@media (max-width: 1024px) {
-  .container {
-    width: 90%;
-  }
-
-  #home {
-    width: 80%;
-  }
-
-  .skills-content,
-  .projects-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .about-content-satu {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .about-content-satu p {
-    padding: 15px;
-    font-size: 14px;
-  }
-
-  .about-content-dua {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .contact-content {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media (max-width: 768px) {
   nav {
     height: 60px;
