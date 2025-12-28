@@ -88,10 +88,11 @@ nav .contact {
 }
 
 nav .contact a {
+  font-family: 'tahoma', Arial, Helvetica, sans-serif;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 /* hamburger Menu */
@@ -447,8 +448,8 @@ span {
 }
 
 .contact-content label {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
+  letter-spacing: 2px;
   font-weight: bold;
 }
 
@@ -468,6 +469,13 @@ span {
   height: 90px;
 }
 
+.contact-aksi {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
 .contact-btn {
   display: flex;
   gap: 10px;
@@ -485,6 +493,36 @@ span {
   background: linear-gradient(to bottom, #e6f2ff, #b7d5f5);
 }
 
+.display-none {
+  display: none;
+}
+
+.alert-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.alert {
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border: 1px solid #999;
+  color: #000;
+  border-radius: 6px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  height: fit-content;
+}
+
+.alert-btn-close {
+  background: transparent;
+  width: 20px;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .contact-right {
   padding: 20px;
   background-color: #ece9d8;
@@ -492,8 +530,8 @@ span {
 }
 
 .contact-right h4 {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+  letter-spacing: 1px;
   margin-bottom: 30px;
 }
 
@@ -505,11 +543,11 @@ span {
 }
 
 .contact-right li {
-  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 12px;
+  font-size: 18px;
+  letter-spacing: 1px;
   margin-bottom: 8px;
 }
 
@@ -520,6 +558,8 @@ span {
 .contact-right img {
   width: 16px;
 }
+
+/* footer section */
 
 footer {
   width: 100%;
@@ -535,10 +575,11 @@ footer {
   border-radius: 0px 0px 15px 15px;
 }
 
+/* pverlay projects */
 .overlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
   display: flex;
   align-items: center;
@@ -554,6 +595,7 @@ footer {
 }
 
 .container-pcard {
+  margin: 20px;
   background-color: #ece9d8;
   border-radius: 12px;
 }

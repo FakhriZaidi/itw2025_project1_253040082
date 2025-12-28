@@ -11,9 +11,13 @@
 
     <!-- sosmed icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- navbar start -->
     <nav>
         <div class="logo">
             <a href="#">Ryyzaids.</a>
@@ -40,30 +44,39 @@
             </div>
         </div>
     </nav>
+    <!-- navbar end -->
 
+    <!-- home section -->
     <section id="home">
-
-        <h1>Hello, I'm <span>Fakhri</span></h1>
-        <p>I'm a Web Developers</p>
+        <h1 data-aos="fade-up" data-aos-duration="1000">Hello, I'm <span>Fakhri</span></h1>
+        <p data-aos="fade-up" data-aos-duration="1500">I'm a Web Developers</p>
         <div class="sosmed-icons">
-            <a href="https://instagram.com/ryy_zaid" class="ig" target="_blank">
+            <a href="https://instagram.com/ryy_zaid" class="ig" target="_blank" data-aos="zoom-in" data-aos-duration="500">
                 <i class="fa-brands fa-instagram"></i>
             </a>
 
-            <a href="https://github.com/FakhriZaidi" class="github" target="_blank">
+            <a href="https://github.com/FakhriZaidi" class="github" target="_blank" data-aos="zoom-in" data-aos-duration="1000">
                 <i class="fa-brands fa-github"></i>
             </a>
 
-            <a href="https://wa.me/6281222691478" class="wa" target="_blank">
+            <a href="https://wa.me/6281222691478" class="wa" target="_blank" data-aos="zoom-in" data-aos-duration="1500">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
 
 
-            <div class="btn"><a href="sections/about.html">More About Me</a></div>
+            <div class="btn" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                data-aos-duration="500"><a href="sections/about.html">More About Me</a></div>
         </div>
     </section>
+    <!-- home section -->
 
+    <!-- java script -->
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- java script end -->
 </body>
 
 </html>

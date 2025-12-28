@@ -11,6 +11,9 @@
 
     <!-- sosmed icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -44,8 +47,9 @@
     </nav>
     <!-- navbar end -->
 
+    <!-- contact section -->
     <section id="contact">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="topbar">
                 <h2>Contact Me</h2>
                 <a href="../index.html"><img src="../img/icons/Exit.png" alt="Exit"></a>
@@ -53,18 +57,31 @@
 
             <div class="contact-content">
                 <div class="contact-left">
-                    <form>
+                    <form name="ryyzaids-contact-form">
                         <label>Name</label>
-                        <input type="text" placeholder="Your name" required>
+                        <input type="text" placeholder="Your name" required name="nama">
 
                         <label>Email</label>
-                        <input type="email" placeholder="your@gmail.com" required>
+                        <input type="email" placeholder="your@gmail.com" required name="email">
 
                         <label>Message</label>
-                        <textarea placeholder="Type your message here..."></textarea>
+                        <textarea placeholder="Type your message here..." name="pesan"></textarea>
 
-                        <div class="contact-btn">
-                            <button type="submit">Send</button>
+                        <div class="contact-aksi">
+                            <div class="contact-btn btn-kirim">
+                                <button type="submit">Send</button>
+                            </div>
+
+                            <div class="contact-btn btn-loading display-none">
+                                <button type="submit">Sending...</button>
+                            </div>
+
+                            <div class="alert my-alert display-none">
+                                <div class="alert-wrap">
+                                    <p>Message sent! Thank you for reaching out.</p>
+                                    <button type="button" class="alert-btn-close">X</button>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -92,13 +109,22 @@
                 </div>
             </div>
 
+            <!-- footer -->
             <footer>
                 <p>Copyright © 2025 Fakhri Zaidi Djulistiawan. All rights reserved.</p>
             </footer>
+            <!-- footer end -->
         </div>
     </section>
+    <!-- contact end -->
 
+    <!-- java script -->
     <script src="../js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- java script end -->
 </body>
 
 </html>

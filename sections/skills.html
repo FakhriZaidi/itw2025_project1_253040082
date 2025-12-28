@@ -11,6 +11,9 @@
 
     <!-- sosmed icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -44,15 +47,16 @@
     </nav>
     <!-- navbar end -->
 
+    <!-- skills section -->
     <section id="skills">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="topbar">
                 <h2>What Can I Do?</h2>
                 <a href="../index.html"><img src="../img/icons/Exit.png" alt="Exit"></a>
             </div>
 
             <div class="skills-content">
-                <div class="skills-card">
+                <div class="skills-card" data-aos="zoom-in" data-aos-duration="1000" >
                     <h3>Networking (TKJ)</h3>
                     <ul>
                         <li>Mikrotik Router Configuration (MTCNA)</li>
@@ -62,7 +66,7 @@
                     </ul>
                 </div>
 
-                <div class="skills-card">
+                <div class="skills-card" data-aos="zoom-in" data-aos-duration="1000" >
                     <h3>Web Development (Learning)</h3>
                     <ul>
                         <li>HTML</li>
@@ -72,7 +76,7 @@
                     </ul>
                 </div>
 
-                <div class="skills-card">
+                <div class="skills-card" data-aos="zoom-in" data-aos-duration="1000" >
                     <h3>Document Creation</h3>
                     <ul>
                         <li>Msc. Word (Document Formatting)</li>
@@ -82,7 +86,7 @@
                     </ul>
                 </div>
 
-                <div class="skills-card b">
+                <div class="skills-card b" data-aos="zoom-in" data-aos-duration="1000" >
                     <h3>Tools & Software</h3>
                     <ul>
                         <li>Visual Studio Code</li>
@@ -92,7 +96,7 @@
                     </ul>
                 </div>
 
-                <div class="skills-card b">
+                <div class="skills-card b" data-aos="zoom-in" data-aos-duration="1000" >
                     <h3>Other Interests</h3>
                     <ul>
                         <li>Photography</li>
@@ -102,7 +106,7 @@
                     </ul>
                 </div>
 
-                <div class="skills-card b">
+                <div class="skills-card b" data-aos="zoom-in" data-aos-duration="1000" >
                     <h3>Language</h3>
                     <ul>
                         <li>Indonesian (Native)</li>
@@ -113,13 +117,22 @@
                 </div>
             </div>
 
+            <!-- footer -->
             <footer>
                 <p>Copyright © 2025 Fakhri Zaidi Djulistiawan. All rights reserved.</p>
             </footer>
+            <!-- footer end -->
         </div>
     </section>
+    <!-- skills end -->
 
+    <!-- java script -->
     <script src="../js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- java script end -->
 </body>
 
 </html>
