@@ -651,13 +651,14 @@ footer {
   border-radius: 8px;
   border: 1px solid #000;
   background-color: #fff;
-  padding: 0 20px;
+  padding: 15px 20px;
   font-size: 15px;
   text-align: justify;
-  line-height: 40px;
+  line-height: 25px;
 }
 
 .overlay .pcard-img {
+  border-radius: 8px;
   margin: 20px;
   width: 110vh;
   height: auto;
