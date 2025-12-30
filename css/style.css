@@ -197,7 +197,7 @@ nav .contact a {
 #home {
   margin: 0 auto;
   width: 50%;
-  min-height: 70vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -596,7 +596,7 @@ footer {
   border-radius: 0px 0px 15px 15px;
 }
 
-/* pverlay projects */
+/* pverlay  */
 .overlay {
   position: fixed;
   inset: 0;
